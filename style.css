@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(42, 150, 192);
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    color: rgb(13, 23, 160);
+}
+h3 {
+    color: white;
+}
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#legendId {
+    color: white;
+}
+li {
+    font-weight: bold;
+}
+#imageId {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#imgId {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#employeeId {
+    width: 250px;
+    height: 250px;
+}
+#divId {
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+}
