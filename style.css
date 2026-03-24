@@ -1,24 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --blue-color: rgb(42, 150, 192);
+}
+
+body.dark-mode {
+    --white-color: #171717;
+    --black-color: #d4d4d4;
+    --border-color: #737373;
+    --secondary-color: #d4d4d4;
+}
 body {
-    background-color: rgb(42, 150, 192);
+    background: var(--white-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
 }
 
 h1 {
     text-align: center;
+    color: var(--black-color);
 }
 h2 {
     color: rgb(13, 23, 160);
 }
 h3 {
     color: white;
+    color: var(--black-color);
 }
+h4 {
+    color: var(--black-color);
+}
+
 fieldset {
+    color: var(--secondary-color);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
 }
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+}
+
+.navbar .nav-button {
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: none;
+}
+
+.navbar .nav-button:hover {
+    background-color: lightgrey;
+}
+
+.navbar .nav-button i {
+    color: var(--black-color);
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
 #legendId {
     color: white;
+    color: var(--black-color)
 }
 li {
     font-weight: bold;
